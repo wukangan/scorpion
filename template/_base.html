@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>{% block title %}{% end %}</title>
+  <meta name="keywords" content="{% block keywords %}{% end %}" />
+  <meta name="description" content="{% block description %}{% end %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="{{ handler.settings['static_uri'] }}/style.css">
+  <script type="text/javascript" src="{{ handler.settings['static_uri'] }}/main.js"></script>
+</head>
+<body>
+  {% block content %}{% end %}
+</body>
+</html>
